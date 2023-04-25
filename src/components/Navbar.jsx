@@ -49,7 +49,7 @@ const Navbar = () => {
                         <div className="navbar-nav text-center me-auto mb-2 mb-lg-0">
                             {/* <NavLink activeclassname="active" className="nav-link" to="/">Home</NavLink> */}
                             <NavLink activeclassname="active" className="nav-link text-dark" to="/about">About</NavLink>
-                            <NavLink activeclassname="active" className="nav-link text-dark" to="/home">Home</NavLink>
+                          
                         </div>
                         {!localStorage.getItem('token') ? <form className="d-flex gap-2 button">
                             <Link className="btn login" to='/login' style={{ backgroundColor: '#6f42c1', color: '#ffffff', textDecoration: 'none', outline: '0', boxShadow: 'none' }}>Login</Link>

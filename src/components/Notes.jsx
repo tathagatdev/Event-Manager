@@ -89,7 +89,7 @@ const Notes = (props) => {
             <hr />
             <div className="container">
                 <div className='row my-3'>
-                    <h1 className='textCenter fw-bold'>Your Notes</h1>
+                    <h1 className='textCenter fw-bold'>Your Events</h1>
                     {notes.length === 0 && <h5 style={{ color: '#6f42c1' }}>No Note Yet!!</h5>}
                     {notes.map((note) => {
                         //~ In MongoDB, each document stored in a collection requires a unique _id field that acts as a primary key. If an inserted document omits the _id field, the MongoDB driver automatically generates an ObjectId for the _id field. 

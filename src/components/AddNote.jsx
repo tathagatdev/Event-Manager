@@ -28,7 +28,7 @@ const AddNote = (props) => {
     return (
         <div className='container col-lg-8 col-md-6'>
             <h1 className='text-center fw-bold mt'>What's the Plan for Today?</h1>
-            <h3 className='fw-bold mb-3'>Write Your Note 👇</h3>
+            <h3 className='fw-bold mb-3'>Create Your Event 👇</h3>
             <form>
                 <style jsx='true'>
                     {`
@@ -58,7 +58,7 @@ const AddNote = (props) => {
                     <label htmlFor="tag" className="form-label">Tag</label>
                     <input type="text" className="form-control" id="tag" name='tag' value={note.tag} onChange={onChange} />
                 </div>
-                <button disabled={note.title.length === 0 && note.description.length === 0} onClick={handleClick} type="submit" className="btn addBtn d-block col-xxl-3 col-xl-4 col-lg-4 col-md-6 mx-auto">Add Note</button>
+                <button disabled={note.title.length === 0 && note.description.length === 0} onClick={handleClick} type="submit" className="btn addBtn d-block col-xxl-3 col-xl-4 col-lg-4 col-md-6 mx-auto">Add Event</button>
             </form>
         </div>
     );
